@@ -28,6 +28,6 @@ cdef class CppCls:
     def y(self):
         return self._thisptr.y
 
-    cpdef unsigned long sum(self):
+    cpdef int sum(self):
         return self._thisptr.sum()
 
