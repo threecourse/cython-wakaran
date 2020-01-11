@@ -14,14 +14,14 @@ if __name__ == "__main__":
     # c関数
     print(quad_c(5))
 
-    # python関数 + 型の指定 - numpy.ndarray
+    # numpy.ndarray - python関数 + 型の指定
     ary = np.arange(12).reshape(3, 4).astype(float)
     print(ary_sum(ary))
     ary2 = ary.copy()
     ary_add(ary2, 10)
     print(ary2)
 
-    # c関数 - numpy.ndarray
+    # numpy.ndarray - c関数
     print(ary_sum_c(ary))
     ary2 = ary.copy()
     ary_add_c(ary2, 10)
@@ -32,7 +32,7 @@ if __name__ == "__main__":
     cls.a = 15
     print(cls.sum())
 
-    # cクラス + 型の指定
+    # cクラス
     cls = ClsC()
     cls.a = 15
     print(cls.sum())
